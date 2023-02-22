@@ -71,7 +71,9 @@ body {
 img {
     max-width: 100%;
 }
-
+.hidden {
+    display: none;
+}
 
 /* #endregion utility */
 
@@ -95,9 +97,11 @@ img {
     justify-content: space-between;
 }
 
-.side_menu .img {
-    margin-bottom: 0.5rem;
-    padding: 0.2rem;
+.m_top, .m_bottom {
+    color: white;
+}
+.home, .shearch, .librery, .Profile, .download {
+    align-items: center;
 }
 
 .content {
@@ -185,6 +189,15 @@ img {
     .col_x_6 {
         width: calc(100% / 12 * 6);
     }
+    .logo_smoll{
+        display: none;
+    }
+    .hidden {
+        display: flex;
+    }
+    .side_menu img {
+        width: 20%;
+    }
 }
 
 @media screen and (min-width:780px) {
@@ -200,6 +213,9 @@ img {
     .col_md_3 {
         width: calc(100% / 12 * 3);
     }
+    .side_menu img {
+        width: 20%;
+    }
 }
 
 @media screen and (min-width:1280px) {
@@ -214,5 +230,8 @@ img {
 
     .col_lg_2 {
         width: calc(100% / 12 * 2);
+    }
+    .side_menu img {
+        width: 20%;
     }
 }
