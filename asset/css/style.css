@@ -21,6 +21,11 @@
 .debug .content_body {
     background-color: palegreen;
 }
+
+[class^="col_"] {
+    height: 100px;
+    background-color: rgb(139, 89, 187);
+}
 /* #endregion debug */
 
 /* #region utility */
@@ -29,6 +34,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Circular Std', sans-serif;
 }
 
 .row {
@@ -62,6 +71,27 @@
     height: calc(100% - 70px);
 }
 
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.menu_content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu_content li {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+/* endnav */
+
+.col_xs_6 {
+    width: calc(100% / 12 * 6);
+}
+
 /* #region sidebar */
 
 .sidebar {
@@ -84,5 +114,8 @@
     .sidebar {
     width: 200px;
     height: 100%;
+}
+.content {
+    width: calc(100% - 200px);
 }
 }
