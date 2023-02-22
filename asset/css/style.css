@@ -4,6 +4,46 @@
     box-sizing: border-box;
 }
 
-body {
+/* #region debug */
+ .debug .top {
     background-color: palegoldenrod;
+ }
+
+ .debug .bottom {
+    background-color: aquamarine;
+ }
+
+ .debug .sidebar {
+    background-color: black;
+}
+/* #endregion debug */
+
+/* #region top */
+.top {
+    height: calc(100vh - 70px);
+}
+
+/* #region sidebar */
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+}
+
+/* #endregion sidebar */
+
+/* #endregion top */
+
+/* #region footer */
+.bottom {
+    height: 70px;
+}
+/* #endregion footer */
+
+
+@media screen and (min-width:481px){
+    .sidebar {
+    width: 200px;
+    height: 100%;
+}
 }
