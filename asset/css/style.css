@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* #region debug */
  .debug .top {
     background-color: palegoldenrod;
@@ -16,11 +10,56 @@
  .debug .sidebar {
     background-color: black;
 }
+.debug .top_heder {
+    background-color: palegreen;
+}
+
+.debug .content_header{
+    background-color: aquamarine;
+}
+
+.debug .content_body {
+    background-color: palegreen;
+}
 /* #endregion debug */
+
+/* #region utility */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+/* #endregion utility */
+
+
 
 /* #region top */
 .top {
     height: calc(100vh - 70px);
+}
+
+.content {
+    width: calc(100% - 50px);
+}
+
+.content_header {
+    height: 70px;
+}
+.content_body {
+    height: calc(100% - 70px);
 }
 
 /* #region sidebar */
