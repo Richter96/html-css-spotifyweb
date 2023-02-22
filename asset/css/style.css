@@ -37,6 +37,10 @@
     background-color: rgb(139, 89, 187);
 }
 
+.col_4 {
+    background-color: green;
+}
+
 /* #endregion debug */
 
 /* #region utility */
@@ -159,6 +163,10 @@ img {
 /* #region footer */
 .bottom {
     height: 70px;
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
 }
 
 /* #endregion footer */
