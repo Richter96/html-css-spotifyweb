@@ -87,7 +87,8 @@ img {
 }
 
 .side_menu {
-    align-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .side_menu .img {
