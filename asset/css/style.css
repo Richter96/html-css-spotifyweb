@@ -224,6 +224,17 @@ img {
 footer .row {
     height: 100%;
 }
+.info_song img {
+    width: 50px;
+}
+.info_song .col_4 {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 /* #endregion footer */
 
 
