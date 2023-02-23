@@ -140,15 +140,16 @@ img {
 }
 
 .home,
-.shearch,
+.search,
 .librery,
 .Profile,
 .download {
     justify-content: center;
+    margin: 1rem 0;
 }
 
 .home img,
-.shearch img,
+.search img,
 .librery img,
 .Profile img,
 .download img {
@@ -170,14 +171,7 @@ img {
     border: 0.5px solid var(--grey_text);
 }
 
-.btn_upgrade a {
-    background-color: var(--upgrade-);
-    border-radius: 2rem;
-    color: var(--white-);
-    border: 1px solid var(--white-);
-    padding: 0.5rem 2rem;
-    text-decoration: none;
-}
+
 
 .content {
     width: calc(100% - 50px);
@@ -191,11 +185,22 @@ img {
     align-items: center;
     justify-content: flex-end;
 }
-
+.btn_upgrade a {
+    background-color: var(--upgrade-);
+    border-radius: 2rem;
+    color: var(--white-);
+    border: 1px solid var(--white-);
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
 .btn_upgrade {
     align-items: center;
+    margin-right: 2rem;
+    transition: 0.5s linear;
 }
-
+.btn_upgrade:hover{
+    font-size: 1.5rem;
+}
 .content_body {
     height: calc(100% - 70px);
     overflow: scroll;
@@ -443,7 +448,7 @@ img {
     }
 
     .home,
-    .shearch,
+    .search,
     .librery,
     .Profile,
     .download {
@@ -566,4 +571,17 @@ img {
 .underline_green:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.home:hover.home{
+    border-left: 2px solid var(--green-);
+}
+.search:hover.search{
+    border-left: 2px solid var(--green-);
+}
+.playlist:hover.playlist{
+    border-left: 2px solid var(--green-);
+}
+.librery:hover.librery{
+    border-left: 2px solid var(--green-);
 }
