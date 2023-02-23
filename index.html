@@ -24,15 +24,15 @@
                 <div class="m_top">
                     <div class="home d-flex">
                         <img src="./asset/img/home.svg" alt="casa">
-                        <div class="text hidden">Home</div>
+                        <a href="#"><span class="text hidden grey">Home</span></a>
                     </div>
-                    <div class="shearch d-flex">
+                    <div class="shearch d-flex ">
                         <img src="./asset/img/search.svg" alt="Cerca">
-                        <div class="text hidden">Cerca</div>
+                        <a href="#"><span class="text hidden grey">Cerca</span></a>
                     </div>
-                    <div class="librery d-flex">
+                    <div class="librery d-flex grey">
                         <img src="./asset/img/libreria.svg" alt="Libreria">
-                        <div class="text hidden">Libreria</div>
+                        <a href="#"><span class="text hidden grey ">Libreria</span></a>
                     </div>
                     <div class="playlist">
                         <div class="p_header">
@@ -43,13 +43,12 @@
                         </div>
                         <div class="p_body">
                             <ul>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <a href=""><li class="grey">Nome Playlist</li></a>
                             </ul>
                         </div>
                     </div>
@@ -58,14 +57,14 @@
                 <div class="m_bottom">
                     <div class="download d-flex">
                         <img src="./asset/img/download.svg" alt="casa">
-                        <div class="text hidden">Installa app</div>
+                        <a href=""><span class="text hidden grey">Installa app</span></a>
                     </div>
                     <hr>
                     <div class="Profile d-flex">
                         <img src="./asset/img/profile.svg" alt="casa">
-                        <div class="text hidden">John Doe</div>
+                        <a href=""><span class="text hidden grey">John Doe</span></a>
                     </div>
-                <!-- /Bottom -->
+                    <!-- /Bottom -->
 
 
                 </div>
@@ -82,12 +81,12 @@
                 <div class="container">
                     <nav class="menu_content">
                         <ul>
-                            <li>IN EVIDENZA</li>
-                            <li>PODCAST</li>
-                            <li>CLASSIFICHE</li>
-                            <li>GENERI E MOOD</li>
-                            <li>NUOVE USCITE</li>
-                            <li>SCOPRI</li>
+                            <li class="underline_green">IN EVIDENZA</li>
+                            <li class="underline_green">PODCAST</li>
+                            <li class="underline_green">CLASSIFICHE</li>
+                            <li class="underline_green">GENERI E MOOD</li>
+                            <li class="underline_green">NUOVE USCITE</li>
+                            <li class="underline_green">SCOPRI</li>
                         </ul>
                     </nav>
                     <div class="songs">
@@ -232,14 +231,14 @@
         <div class="row">
             <div class="box_song">
                 <div class="row">
-                        <img src="./asset/img/sinister.jpeg" alt="">
+                    <img src="./asset/img/sinister.jpeg" alt="">
                     <div class="info_song">
-                        <span>Sinister</span>
-                        <span>Brano Nome</span>
+                        <span class="white">Sinister</span>
+                        <span class="grey">Brano Nome</span>
                     </div>
                     <div class="d-flex column">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-regular fa-folder"></i>
+                        <i class="fa-regular fa-heart grey"></i>
+                        <i class="fa-regular fa-folder grey"></i>
                     </div>
                 </div>
             </div>
@@ -247,15 +246,24 @@
                 <div class="icon_play d-flex">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-solid fa-play"></i>
+                    <div class="bplay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <div class="time">
-                    cao
+                <div class="time d-flex">
+                    <span>2:00</span>
+                    <div class="brake"></div>
+                    <span>-1:38</span>
                 </div>
             </div>
-            <div class=""></div>
+            <div class=" settings">
+                <i class="fa-solid fa-bars white"></i>
+                <i class="fa-solid fa-display white"></i>
+                <i class="fa-solid fa-volume-high white"></i>
+                <div class="volume"></div>
+            </div>
         </div>
     </footer>
 
