@@ -95,11 +95,11 @@ img {
 
 /* #region top */
 .top {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
 }
 
 .sidebar {
-    padding: 0.5rem;
+    padding: 0.3rem;
     background-color: var(--sidebar-);
 }
 
@@ -116,7 +116,22 @@ img {
     color: white;
 }
 .home, .shearch, .librery, .Profile, .download {
-    align-items: center;
+    justify-content: center;
+}
+.home img, .shearch img, .librery img, .Profile img, .download img{
+    width: 80%;
+}
+.Profile, .download {
+    margin: 0.8rem 0;
+    color: var(--grey_text);
+}
+.Profile img {
+    background-color: #7c7e83;
+    border-radius: 50%;
+}
+
+.m_bottom hr {
+    border: 0.5px solid var(--grey_text);
 }
 .btn_upgrade a {
     background-color: var(--upgrade-);
@@ -217,12 +232,14 @@ img {
 }
 .playlist {
     margin-top: 2rem;
+    flex-direction: column;
+    display: none;
 }
 
 .p_body {
     color: var(--grey_text);
     padding:1rem 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .p_body ul {
     list-style: none;
@@ -244,37 +261,82 @@ img {
 
 /* #region footer */
 .bottom {
-    height: 70px;
+    height: 100px;
 }
 
 .col_4 {
     width: calc(100% / 12 * 4);
 }
-footer .row {
+.box_song .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.box_song img {
+    width: 40%;
+    padding: 1rem;
+}
+.box_song {
+    width: 220px;
+}
+.info_song span{
+    display: block;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+.play {
+    width: 70%;
+}
+
+.icon_play{
+    background-color: lightgreen;
     height: 100%;
 }
-.info_song img {
+.icon_play .fa-solid {
+    display: flex;
+    justify-content: space-around;
+    align-content: baseline;
+    font-size: 1.5rem;
+    color: var(--white-);
+}
+.fa-play{
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 0.6rem;
+}
+.time{
+    background-color: rgb(44, 99, 44);
+    height: 100%;
+}
+/* footer .row {
+    height: 100%;
+}
+.box_song img {
     width: 50px;
 }
-.info_song .col_4 {
+.box_song .col_4 {
     padding: 0.3rem;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-}
+ } */
+
 /* #endregion footer */
 
 
 @media screen and (min-width:481px) {
     .sidebar {
-        width: 180px;
+        width: 200px;
         height: 100%;
+        padding:1rem;
+        overflow: hidden;
     }
 
     .content {
-        width: calc(100% - 180px);
+        width: calc(100% - 200px);
     }
 
     .col_x_6 {
@@ -286,19 +348,34 @@ footer .row {
     .hidden {
         display: flex;
     }
+    .home, .shearch, .librery, .Profile, .download {
+        justify-content: start;
+    }
     .side_menu img {
         width: 20%;
+    }
+    .playlist {
+        display: flex;
+        flex-direction: column;
+    }
+    .download {
+        font-size: 0.7rem;
+    }
+    .download img, .Profile img {
+        width: 15%!important;
+        margin-right: 1rem;
     }
 }
 
 @media screen and (min-width:780px) {
     .sidebar {
-        width: 180px;
+        width: 220px;
         height: 100%;
+        padding:1rem;
     }
 
     .content {
-        width: calc(100% - 180px);
+        width: calc(100% - 220px);
     }
 
     .col_md_3 {
@@ -307,16 +384,27 @@ footer .row {
     .side_menu img {
         width: 20%;
     }
+    .playlist {
+        display: flex;
+    }
+    .download {
+        font-size: 0.7rem;
+    }
+    .download img, .Profile img {
+        width: 15%!important;
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (min-width:1280px) {
     .sidebar {
-        width: 180px;
+        width: 220px;
         height: 100%;
+        padding:1rem;
     }
 
     .content {
-        width: calc(100% - 180px);
+        width: calc(100% - 220px);
     }
 
     .col_lg_2 {
@@ -324,5 +412,21 @@ footer .row {
     }
     .side_menu img {
         width: 20%;
+    }
+    .playlist {
+        display: flex;
+    }
+    .download {
+        font-size: 0.7rem;
+    }
+    .download img, .Profile img {
+        width: 15%!important;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-height:550) {
+    .p_body {
+        height: 100px;
     }
 }
