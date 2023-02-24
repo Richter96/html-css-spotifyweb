@@ -34,36 +34,38 @@
                         <img src="./asset/img/libreria.svg" alt="Libreria">
                         <a class="hidden" href="#"><span class="text  grey ">Libreria</span></a>
                     </div>
-                    <div class="playlist hidden">
-                        <div class="p_header">
-                            <h3 class="pb-1">PLAYLIST</h3>
-                            <div class="plus">
-                                <i class="fa-sharp fa-solid fa-plus fa-2x"></i><span>Crea Playlist</span>
-                            </div>
-                        </div>
-                        <div class="p_body">
-                            <ul>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-                                <li><a class="grey" href="">Nome Playlist</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
                 </nav>
             </div>
-            <div class="sidebar_bottom">
-                <div class="download d-flex">
-                    <img src="./asset/img/download.svg" alt="casa">
-                    <a class="hidden" href=""><span class="text grey">Installa app</span></a>
+            <div class="playlist hidden">
+                <div class="p_header">
+                    <h3 class="pb-1">PLAYLIST</h3>
+                    <div class="plus">
+                        <i class="fa-sharp fa-solid fa-plus fa-2x"></i><span>Crea Playlist</span>
+                    </div>
                 </div>
-                <hr>
-                <div class="Profile d-flex">
-                    <img src="./asset/img/profile.svg" alt="casa">
-                    <a class="hidden" href=""><span class="text grey">John Doe</span></a>
+                <div class="p_body">
+                    <ul>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+                        <li><a class="grey" href="">Nome Playlist</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_bottom">
+                <div class="box">
+                    <div class="download d-flex">
+                        <img src="./asset/img/download.svg" alt="casa">
+                        <a class="hidden" href=""><span class="text grey">Installa app</span></a>
+                    </div>
+                    <hr>
+                    <div class="Profile d-flex">
+                        <img src="./asset/img/profile.svg" alt="casa">
+                        <a class="hidden" href=""><span class="text grey">John Doe</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,28 +228,28 @@
 
     <footer class="bottom">
         <div class="row">
-            <div class="box_song">
-                <div class="row">
-                    <img src="./asset/img/sinister.jpeg" alt="">
-                    <div class="info_song">
-                        <span class="white">Sinister</span>
-                        <span class="grey">Brano Nome</span>
-                    </div>
-                    <div class="d-flex column">
-                        <i class="fa-regular fa-heart grey"></i>
-                        <i class="fa-regular fa-folder grey"></i>
-                    </div>
+            <div class="box_song col_4">
+                <img src="./asset/img/sinister.jpeg" alt="">
+                <div class="info_song">
+                    <span class="white">Sinister</span>
+                    <span class="grey">Brano Nome</span>
+                </div>
+                <div class="d-flex column">
+                    <i class="fa-regular fa-heart grey"></i>
+                    <i class="fa-regular fa-folder grey"></i>
                 </div>
             </div>
-            <div class="play d-flex column">
+            <div class="play col_4 d-flex column">
                 <div class="icon_play d-flex">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <div class="bplay">
-                        <i class="fa-solid fa-play"></i>
+                    <div class="box_play">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <div class="bplay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
                     </div>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
                 </div>
                 <div class="time d-flex">
                     <span>2:00</span>
@@ -255,13 +257,15 @@
                     <span>-1:38</span>
                 </div>
             </div>
-            <div class=" settings d-flex">
+            <div class=" settings col_4 d-flex">
                 <i class="fa-solid fa-bars white"></i>
                 <i class="fa-solid fa-display white"></i>
-                <div class="volume">
-                    <i class="fa-solid fa-volume-high white"></i>
-                    <div class="bar_vol"></div>
+                <i class="fa-solid fa-volume-high white"></i>
+                <div class="bar_vol">
                 </div>
+                <div class="bar_vol_hover"></div>
+
+
 
             </div>
         </div>
