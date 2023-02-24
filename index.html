@@ -16,25 +16,25 @@
 <body class="">
     <div class="top d-flex">
         <div class="sidebar d-flex column">
-            <div class="logo">
-                <img class="logo_smoll" src="./asset/img/logo-small.svg" alt="logo Spotify">
-                <img class="hidden" src="./asset/img/logo.svg" alt="logo Spotify">
-            </div>
-            <nav class="side_menu d-flex column">
-                <div class="m_top">
+            <div class="sidebar_top">
+                <div class="logo">
+                    <img class="logo_smoll" src="./asset/img/logo-small.svg" alt="logo Spotify">
+                    <img class="hidden" src="./asset/img/logo.svg" alt="logo Spotify">
+                </div>
+                <nav class="side_menu d-flex column">
                     <div class="home d-flex">
                         <img src="./asset/img/home.svg" alt="casa">
-                        <a href="#"><span class="text left-green hidden grey">Home</span></a>
+                        <a class="hidden" href="#"><span class="text left-green  grey">Home</span></a>
                     </div>
-                    <div class="search d-flex ">
+                    <div class="search d-flex">
                         <img src="./asset/img/search.svg" alt="Cerca">
-                        <a href="#"><span class="text hidden grey">Cerca</span></a>
+                        <a class="hidden" href="#"><span class="text  grey">Cerca</span></a>
                     </div>
                     <div class="librery d-flex grey">
                         <img src="./asset/img/libreria.svg" alt="Libreria">
-                        <a href="#"><span class="text hidden grey ">Libreria</span></a>
+                        <a class="hidden" href="#"><span class="text  grey ">Libreria</span></a>
                     </div>
-                    <div class="playlist">
+                    <div class="playlist hidden">
                         <div class="p_header">
                             <h3 class="pb-1">PLAYLIST</h3>
                             <div class="plus">
@@ -43,32 +43,29 @@
                         </div>
                         <div class="p_body">
                             <ul>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
-                                <a href=""><li class="grey">Nome Playlist</li></a>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+                                <li><a class="grey" href="">Nome Playlist</a></li>
+
                             </ul>
                         </div>
                     </div>
+                </nav>
+            </div>
+            <div class="sidebar_bottom">
+                <div class="download d-flex">
+                    <img src="./asset/img/download.svg" alt="casa">
+                    <a class="hidden" href=""><span class="text grey">Installa app</span></a>
                 </div>
-                <!-- /top -->
-                <div class="m_bottom">
-                    <div class="download d-flex">
-                        <img src="./asset/img/download.svg" alt="casa">
-                        <a href=""><span class="text hidden grey">Installa app</span></a>
-                    </div>
-                    <hr>
-                    <div class="Profile d-flex">
-                        <img src="./asset/img/profile.svg" alt="casa">
-                        <a href=""><span class="text hidden grey">John Doe</span></a>
-                    </div>
-                    <!-- /Bottom -->
-
-
+                <hr>
+                <div class="Profile d-flex">
+                    <img src="./asset/img/profile.svg" alt="casa">
+                    <a class="hidden" href=""><span class="text grey">John Doe</span></a>
                 </div>
-            </nav>
+            </div>
         </div>
         <!--/sidebar -->
         <div class="content d-flex column">
@@ -258,11 +255,14 @@
                     <span>-1:38</span>
                 </div>
             </div>
-            <div class=" settings">
+            <div class=" settings d-flex">
                 <i class="fa-solid fa-bars white"></i>
                 <i class="fa-solid fa-display white"></i>
-                <i class="fa-solid fa-volume-high white"></i>
-                <div class="volume"></div>
+                <div class="volume">
+                    <i class="fa-solid fa-volume-high white"></i>
+                    <div class="bar_vol"></div>
+                </div>
+
             </div>
         </div>
     </footer>
