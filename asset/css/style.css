@@ -322,6 +322,7 @@ img {
 .sidebar {
     width: 50px;
     height: 100%;
+    overflow: hidden;
 }
 
 /* #endregion sidebar */
@@ -352,6 +353,7 @@ img {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
+    max-width: 220px;
 }
 .play {
     color: var(--white-);
@@ -404,17 +406,18 @@ img {
     align-content: baseline;
     color: var(--white-);
     margin: 0.5rem 0.5rem 0.5rem 0.7rem;
+    font-size: 1.5rem;
 }
 
 .bplay {
-    border: 4px solid white;
+    border: 3px solid white;
     border-radius: 50%;
 }
 .fa-play{
-    transition: 0.5s linear;
+    transition: 0.3s linear;
 }
 .bplay:hover .fa-play{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .time {
